@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asdf</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css"
+    />
+    <link href="css/all.css" rel="stylesheet" />
+    <!--load all styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="fondo text-white">
+    <div
+      class="container mx-auto bg-nosotros-pattern sm:bg-center sm:bg-cover md:bg-contain md:bg-center bg-no-repeat h-screen"
+      id="inicio"
+    >
+      <div class="text-white p-3 mt-4 uppercase">
+        <nav
+          class="grid grid-cols-4 justify-around text-center fixed w-full m-auto top-0 animated p-5 text-lg"
+        >
+          <a href="#inicio" class="hover:text-gray-500">Inicio</a>
+          <a href="#blog" class="hover:text-gray-500">Blog</a>
+          <a href="#" class="hover:text-gray-500">Tienda</a>
+          <a href="contacto.html" class="hover:text-gray-500">Contacto</a>
+        </nav>
+      </div>
+      <div class="h-0 text-white py-12 px-24">
+        <div class="block text-left"></div>
+      </div>
+      <div
+        class="bg-center bg-cover grid grid-cols-3 md:grid-rows-4 md:grid-cols-7 text-center items-center overflow-y-auto"
+      >
+        <h1
+          class="text-5xl font-bold col-start-2 md:col-start-4 md:col-end-5 md:row-start-4"
+        >
+          Asdf project
+        </h1>
+
+        <button
+          class="bg-pink-800 text-yellow-300 hover:text-purple-500 font-bold py-2 px-4 rounded col-start-2 col-end-3 row-start-2 row-end-3 cta md:col-start-6 md:col-end-7 md:row-start-5"
+          type="button"
+        >
+          Modal
+        </button>
+      </div>
+    </div>
+
+    <!-- Modal -->
+
+    <div class="modal-container">
+      <div class="modal modal-close">
+        <p class="close">X</p>
+        <i class="fas fa-music text-pink-800 text-6xl"></i>
+        <div class="modal-textos">
+          <p class="mx-8">
+            I'll ride my bike up to the road Down the streets right through the
+            city I'll go everywhere you go From Chicago to the coast
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fin Modal -->
+
+    <!-- Carrusel -->
+    <div class="contenedor-principal h-auto" id="blog">
+      <h3 class="mb-3 mt-16 text-2xl font-semibold">Nuevas publicaciones</h3>
+      <div class="carousel">
+        <div class="carousel__contenedor">
+          <button arial-labe="Anterior" class="carousel__anterior">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="carousel__lista">
+            <div
+              class="carousel__elemento max-w-sm rounded overflow-hidden shadow-lg"
+            >
+              <img class="w-full" src="img/imagen1.jpg" alt="Imagen de Playa" />
+              <div class="px-6 py-4">
+                <h2 class="font-bold text-xl mb-2">
+                  Los mejores brunch para los fines
+                </h2>
+                <p class="text-gray-700 text-base">
+                  Lacinia dignissim mauris htyyj ker yuan wirj jwkj.Fusce
+                  sollicitudin, id euismod sem velit id dolor. In lectus tellus
+                  tyuie jsleo.
+                </p>
+              </div>
+              <div class="px-6 pt-4 pb-2">
+                <span class="hashtags">#brunch</span>
+                <span class="hashtags">#family</span>
+                <span class="hashtags">#weekends</span>
+              </div>
+            </div>
+
+            <div
+              class="carousel__elemento max-w-sm rounded overflow-hidden shadow-lg"
+            >
+              <img class="w-full" src="img/imagen2.jpg" alt="Imagen de Playa" />
+              <div class="px-6 py-4">
+                <h2 class="font-bold text-xl mb-2">Tours gratuitos en NYC</h2>
+                <p class="text-gray-700 text-base">
+                  Lusce sollicitudin, odio sed Fuodio sed tincidunt laoreet,
+                  ipsum purus dapibus metus, id euismod sem velit id dolor. In
+                  lectus tellus, aliquet ut leo accumsan.
+                </p>
+              </div>
+              <div class="px-6 pt-4 pb-2">
+                <span class="hashtags">#photography</span>
+                <span class="hashtags">#travel</span>
+                <span class="hashtags">#nyc</span>
+              </div>
+            </div>
+
+            <div
+              class="carousel__elemento max-w-sm rounded overflow-hidden shadow-lg"
+            >
+              <img class="w-full" src="img/imagen3.jpg" alt="Imagen de Playa" />
+              <div class="px-6 py-4">
+                <h2 class="font-bold text-xl mb-2">
+                  Pad Thai en Santiago-Chile
+                </h2>
+                <p class="text-gray-700 text-base">
+                  Fusce sollicitudin, odio sed tincidunt laoreet, ipsum purus
+                  dapibus metus, id euismod sem velit id dolor. In lectus
+                  tellus, aliquet ut leo accumsan, lacinia dignissim mauris.
+                </p>
+              </div>
+              <div class="px-6 pt-4 pb-2">
+                <span class="hashtags">#foodies</span>
+                <span class="hashtags">#travel</span>
+                <span class="hashtags">#padthai</span>
+              </div>
+            </div>
+
+            <div
+              class="carousel__elemento max-w-sm rounded overflow-hidden shadow-lg"
+            >
+              <img class="w-full" src="img/imagen4.jpg" alt="Imagen de Playa" />
+              <div class="px-6 py-4">
+                <h2 class="font-bold text-xl mb-2">
+                  Cursos de Barista online gratis!
+                </h2>
+                <p class="text-gray-700 text-base">
+                  In lectus tellus, aliquet ut leo accumsan, lacinia dignissim
+                  mauris. Fusce sollicitudin, odio sed tincidunt laoreet id
+                  euismod sem velit id dolor.
+                </p>
+              </div>
+              <div class="px-6 pt-4 pb-2">
+                <span class="hashtags">#coffe</span>
+                <span class="hashtags">#latte</span>
+                <span class="hashtags">#winter</span>
+              </div>
+            </div>
+
+            <div
+              class="carousel__elemento max-w-sm rounded overflow-hidden shadow-lg"
+            >
+              <img class="w-full" src="img/imagen5.jpg" alt="Imagen de Playa" />
+              <div class="px-6 py-4">
+                <h2 class="font-bold text-xl mb-2">Korean-Town en Toronto</h2>
+                <p class="text-gray-700 text-base">
+                  Fusce sollicitudin, odio sed tincidunt laoreet, ipsum purus
+                  dapibus metus, id euismod sem velit id dolor. In lectus
+                  tellus, aliquet ut leo accumsan, lacinia dignissim mauris.
+                </p>
+              </div>
+              <div class="px-6 pt-4 pb-2">
+                <span class="hashtags">#cities</span>
+                <span class="hashtags">#travel</span>
+                <span class="hashtags">#k-to</span>
+              </div>
+            </div>
+
+            <div
+              class="carousel__elemento max-w-sm rounded overflow-hidden shadow-lg"
+            >
+              <img class="w-full" src="img/imagen6.jpg" alt="Imagen de Playa" />
+              <div class="px-6 py-4">
+                <h2 class="font-bold text-xl mb-2">
+                  Taquerias! Estacion Central - Santiago
+                </h2>
+                <p class="text-gray-700 text-base">
+                  Tincidunt laoreet, ipsum purus dapibus metus, id euismod sem
+                  velit id dolor. In lectus tellus, aliquet ut leo accumsan,
+                  lacinia dignissim mauris.
+                </p>
+              </div>
+              <div class="px-6 pt-4 pb-2">
+                <span class="hashtags">#food</span>
+                <span class="hashtags">#Santiago</span>
+                <span class="hashtags">#tacos</span>
+              </div>
+            </div>
+          </div>
+
+          <button arial-labe="Siguiente" class="carousel__siguiente">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+        <div role="tablist" class="carousel__indicadores"></div>
+      </div>
+    </div>
+    <!-- Fin Carrusel -->
+
+    <footer>
+      <div class="grid grid-cols-2 justify-around text-center mt-6 p-5">
+        <p class="font-bold">
+          Asdf project <span class="text-lg"> By Denisse Falcón</span>
+        </p>
+        <p class="copyright">Todos los derechos reservados 2020 &copy;</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.contenedor-principal {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+/* --- --- CAROUSEL --- --- */
+
+.carousel__contenedor {
+  position: relative;
+}
+
+.carousel__anterior,
+.carousel__siguiente {
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: none;
+  top: calc(50% - 35px);
+  cursor: pointer;
+  line-height: 30px;
+  text-align: center;
+  background: none;
+  color: #fff;
+  opacity: 20%;
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+  opacity: 100%;
+}
+
+.carousel__anterior {
+  left: -30px;
+}
+
+.carousel__siguiente {
+  right: -30px;
+}
+
+.carousel__lista {
+  overflow: hidden;
+}
+
+.carousel__elemento {
+  text-align: center;
+}
+
+.carousel__indicadores .glider-dot {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background: #fff;
+  opacity: 0.2;
+  border-radius: 0;
+}
+
+.carousel__indicadores .glider-dot:hover {
+  opacity: 0.5;
+}
+
+.carousel__indicadores .glider-dot.active {
+  opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    padding: 40px 0;
+  }
+  .contenido-principal {
+    flex-direction: column;
+  }
+  .contenido-principal > * {
+    width: 100%;
+  }
+}
+
+/* --- --- MODAL --- --- */
+
+.modal-container {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.modal {
+  width: 40%;
+  height: 40%;
+  background: #e2ebea;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: relative;
+  transition: transform 1s;
+  transform: translateY(0%);
+  /* overflow: hidden; */
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: rgb(36, 34, 34);
+  color: #fff;
+  line-height: 25px;
+  cursor: pointer;
+  border-radius: 30%;
+}
+
+.modal-close {
+  transform: translateY(-2000%);
+}
+
+.modal img {
+  height: 50%;
+}
+
+.fondo {
+  background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+}
