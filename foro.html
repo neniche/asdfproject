@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asdf</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css"
+    />
+    <link href="css/all.css" rel="stylesheet" />
+    <!--load all styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="fondo2 container text-white sm:w-auto lg:w-auto bg-no-repeat bg-cover bg-fixed sm:h-auto lg:h-auto sm:m-auto"
+  >
+    <div class="text-white sm:p-0 lg:p-3 mt-4 uppercase">
+      <nav
+        class="grid grid-cols-4 justify-around text-center w-full m-auto animated p-5 text-lg"
+      >
+        <a href="index.html" class="hover:text-gray-500">Inicio</a>
+        <a href="index.html#blog" class="hover:text-gray-500">Blog</a>
+        <a href="#" class="hover:text-gray-500">Foro</a>
+        <a href="#" class="hover:text-gray-500">Contacto</a>
+      </nav>
+    </div>
+    <div class="container">
+      <div class="text-lg font-bold my-2 mx-16 p-4">
+        <label
+          >Escribe tus recomendaciones y sugerencias de lugares para
+          visitar</label
+        >
+      </div>
+      <div class="grid grid-cols-2">
+        <form id="formulario">
+          <div class="flex justify-start m-4">
+            <div class="mx-4">
+              <label>Nombre del lugar:</label>
+              <input
+                type="text"
+                class="appearance-none block w-full m-auto bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                placeholder="picada/pub/parque"
+                id="nombre"
+              />
+            </div>
+            <div>
+              <label>Ubicación</label>
+              <input
+                type="text"
+                placeholder="Zona/Ciudad/País"
+                class="appearance-none block w-full m-auto bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                id="ubicacion"
+              />
+            </div>
+          </div>
+          <div class="flex justify-start flex-col m-4 w-1/2">
+            <textarea
+              class="appearance-none block w-full mb-2 ml-4 bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              id="tweet"
+              placeholder="Mensaje, opinion, critica o sugerencia"
+            ></textarea>
+            <input
+              type="submit"
+              class="bg-pink-300 rounded px-2 py-2 m-auto text-purple-800 hover:bg-yellow-400 text-center"
+              id="submit"
+              value="Agregar"
+            />
+          </div>
+          <div class="w-100px h-100px">
+            <img class="max-w-md" src="/img/bike.svg" alt="Imagen ciclista" />
+          </div>
+        </form>
+        <div>
+          <label class="text-lg text-center">Tweets</label>
+          <div id="lista-tweets"></div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="grid grid-cols-2 justify-around text-center mt-2 p-2">
+        <p class="font-bold">
+          Asdf project <span class="text-lg"> By Denisse Falcón</span>
+        </p>
+        <p class="copyright">Todos los derechos reservados 2020 &copy;</p>
+      </div>
+    </footer>
+    <script src="js/foro.js"></script>
+  </body>
+</html>
